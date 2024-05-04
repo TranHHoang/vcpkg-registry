@@ -1,0 +1,194 @@
+diff --git a/msdf-atlas-gen/AtlasGenerator.h b/msdf-atlas-gen/AtlasGenerator.h
+index 75a17a7..ef75c83 100644
+--- a/msdf-atlas-gen/AtlasGenerator.h
++++ b/msdf-atlas-gen/AtlasGenerator.h
+@@ -1,7 +1,7 @@
+ 
+ #pragma once
+ 
+-#include <msdfgen.h>
++#include <msdfgen/msdfgen.h>
+ #include "Remap.h"
+ #include "GlyphGeometry.h"
+ 
+diff --git a/msdf-atlas-gen/AtlasStorage.h b/msdf-atlas-gen/AtlasStorage.h
+index a51f46a..4f00e35 100644
+--- a/msdf-atlas-gen/AtlasStorage.h
++++ b/msdf-atlas-gen/AtlasStorage.h
+@@ -1,7 +1,7 @@
+ 
+ #pragma once
+ 
+-#include <msdfgen.h>
++#include <msdfgen/msdfgen.h>
+ #include "Remap.h"
+ 
+ namespace msdf_atlas {
+diff --git a/msdf-atlas-gen/FontGeometry.h b/msdf-atlas-gen/FontGeometry.h
+index 88e8f33..6f57c60 100644
+--- a/msdf-atlas-gen/FontGeometry.h
++++ b/msdf-atlas-gen/FontGeometry.h
+@@ -5,8 +5,8 @@
+ #include <vector>
+ #include <string>
+ #include <map>
+-#include <msdfgen.h>
+-#include <msdfgen-ext.h>
++#include <msdfgen/msdfgen.h>
++#include <msdfgen/msdfgen-ext.h>
+ #include "types.h"
+ #include "GlyphGeometry.h"
+ #include "Charset.h"
+diff --git a/msdf-atlas-gen/GlyphGeometry.h b/msdf-atlas-gen/GlyphGeometry.h
+index 6e0c13a..454c621 100644
+--- a/msdf-atlas-gen/GlyphGeometry.h
++++ b/msdf-atlas-gen/GlyphGeometry.h
+@@ -1,8 +1,8 @@
+ 
+ #pragma once
+ 
+-#include <msdfgen.h>
+-#include <msdfgen-ext.h>
++#include <msdfgen/msdfgen.h>
++#include <msdfgen/msdfgen-ext.h>
+ #include "types.h"
+ #include "Rectangle.h"
+ #include "Padding.h"
+diff --git a/msdf-atlas-gen/Padding.h b/msdf-atlas-gen/Padding.h
+index f014d7e..46206e9 100644
+--- a/msdf-atlas-gen/Padding.h
++++ b/msdf-atlas-gen/Padding.h
+@@ -1,7 +1,7 @@
+ 
+ #pragma once
+ 
+-#include <msdfgen.h>
++#include <msdfgen/msdfgen.h>
+ 
+ namespace msdf_atlas {
+ 
+diff --git a/msdf-atlas-gen/artery-font-export.h b/msdf-atlas-gen/artery-font-export.h
+index 7aa00e9..3fe15b9 100644
+--- a/msdf-atlas-gen/artery-font-export.h
++++ b/msdf-atlas-gen/artery-font-export.h
+@@ -3,8 +3,8 @@
+ 
+ #ifndef MSDF_ATLAS_NO_ARTERY_FONT
+ 
+-#include <msdfgen.h>
+-#include <msdfgen-ext.h>
++#include <msdfgen/msdfgen.h>
++#include <msdfgen/msdfgen-ext.h>
+ #include "types.h"
+ #include "FontGeometry.h"
+ 
+diff --git a/msdf-atlas-gen/bitmap-blit.h b/msdf-atlas-gen/bitmap-blit.h
+index b186d12..34e1304 100644
+--- a/msdf-atlas-gen/bitmap-blit.h
++++ b/msdf-atlas-gen/bitmap-blit.h
+@@ -1,7 +1,7 @@
+ 
+ #pragma once
+ 
+-#include <msdfgen.h>
++#include <msdfgen/msdfgen.h>
+ #include "types.h"
+ 
+ namespace msdf_atlas {
+diff --git a/msdf-atlas-gen/glyph-generators.h b/msdf-atlas-gen/glyph-generators.h
+index e0d7b23..307296f 100644
+--- a/msdf-atlas-gen/glyph-generators.h
++++ b/msdf-atlas-gen/glyph-generators.h
+@@ -1,7 +1,7 @@
+ 
+ #pragma once
+ 
+-#include <msdfgen.h>
++#include <msdfgen/msdfgen.h>
+ #include "GlyphGeometry.h"
+ #include "AtlasGenerator.h"
+ 
+diff --git a/msdf-atlas-gen/image-encode.h b/msdf-atlas-gen/image-encode.h
+index 9638357..7c093dc 100644
+--- a/msdf-atlas-gen/image-encode.h
++++ b/msdf-atlas-gen/image-encode.h
+@@ -2,7 +2,7 @@
+ #pragma once
+ 
+ #include <vector>
+-#include <msdfgen.h>
++#include <msdfgen/msdfgen.h>
+ #include "types.h"
+ 
+ #ifndef MSDFGEN_DISABLE_PNG
+diff --git a/msdf-atlas-gen/image-save.h b/msdf-atlas-gen/image-save.h
+index 0a0b37e..c1da108 100644
+--- a/msdf-atlas-gen/image-save.h
++++ b/msdf-atlas-gen/image-save.h
+@@ -1,7 +1,7 @@
+ 
+ #pragma once
+ 
+-#include <msdfgen.h>
++#include <msdfgen/msdfgen.h>
+ #include "types.h"
+ 
+ namespace msdf_atlas {
+diff --git a/msdf-atlas-gen/image-save.hpp b/msdf-atlas-gen/image-save.hpp
+index 6be7df4..7598a07 100644
+--- a/msdf-atlas-gen/image-save.hpp
++++ b/msdf-atlas-gen/image-save.hpp
+@@ -2,7 +2,7 @@
+ #include "image-save.h"
+ 
+ #include <cstdio>
+-#include <msdfgen-ext.h>
++#include <msdfgen/msdfgen-ext.h>
+ 
+ namespace msdf_atlas {
+ 
+diff --git a/msdf-atlas-gen/json-export.h b/msdf-atlas-gen/json-export.h
+index 58c763f..38aa2b0 100644
+--- a/msdf-atlas-gen/json-export.h
++++ b/msdf-atlas-gen/json-export.h
+@@ -1,8 +1,8 @@
+ 
+ #pragma once
+ 
+-#include <msdfgen.h>
+-#include <msdfgen-ext.h>
++#include <msdfgen/msdfgen.h>
++#include <msdfgen/msdfgen-ext.h>
+ #include "types.h"
+ #include "FontGeometry.h"
+ 
+diff --git a/msdf-atlas-gen/msdf-atlas-gen.h b/msdf-atlas-gen/msdf-atlas-gen.h
+index a7081f4..b948cfd 100644
+--- a/msdf-atlas-gen/msdf-atlas-gen.h
++++ b/msdf-atlas-gen/msdf-atlas-gen.h
+@@ -8,8 +8,8 @@
+  * Generates compact bitmap font atlases using MSDFgen
+  */
+ 
+-#include <msdfgen.h>
+-#include <msdfgen-ext.h>
++#include <msdfgen/msdfgen.h>
++#include <msdfgen/msdfgen-ext.h>
+ 
+ #include "types.h"
+ #include "utf8.h"
+diff --git a/msdf-atlas-gen/shadron-preview-generator.h b/msdf-atlas-gen/shadron-preview-generator.h
+index a0d5727..3002ca9 100644
+--- a/msdf-atlas-gen/shadron-preview-generator.h
++++ b/msdf-atlas-gen/shadron-preview-generator.h
+@@ -1,8 +1,8 @@
+ 
+ #pragma once
+ 
+-#include <msdfgen.h>
+-#include <msdfgen-ext.h>
++#include <msdfgen/msdfgen.h>
++#include <msdfgen/msdfgen-ext.h>
+ #include "types.h"
+ #include "FontGeometry.h"
+ 
