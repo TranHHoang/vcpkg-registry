@@ -35,7 +35,7 @@
       {
         "kind": "git",
         "repository": "https://github.com/TranHHoang/vcpkg-registry",
-        "baseline": "853624813963597026b6e31ea06d37a8776bffcd",
+        "baseline": "04c52d3092af526913b3885a43d17e9212f4498a",
         "packages": [
           "msdfgen"
         ]
